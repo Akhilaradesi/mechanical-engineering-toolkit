@@ -1,0 +1,44 @@
+[
+  {
+    "id": "d85a45b4-304a-499e-92fb-c584a51ce42b",
+    "tool": "Beam Deflection Calculator",
+    "inputs": {
+      "type": "cantilever",
+      "load": 1500,
+      "length": 20,
+      "youngModulus": 0.3,
+      "momentOfInertia": 0.00004,
+      "units": {
+        "load": "N",
+        "length": "m",
+        "youngModulus": "Pa",
+        "momentOfInertia": "m^4",
+        "deflectionOutput": "m"
+      }
+    },
+    "result": {
+      "deflectionBaseM": 333333333333.3333,
+      "deflectionDisplay": 333333333333.3333,
+      "deflectionUnit": "m",
+      "deflection": 333333333333.3333,
+      "formula": "delta = P L^3 / (3 E I)"
+    },
+    "timestamp": "2026-03-22T13:30:38.815Z"
+  },
+  {
+    "id": "0986e7cd-6364-4a5a-bdfa-59af37798a5b",
+    "tool": "Beam Deflection Calculator",
+    "inputs": {
+      "type": "cantilever",
+      "load": 1400,
+      "length": 2.5,
+      "youngModulus": 0.3,
+      "momentOfInertia": 0.0004
+    },
+    "result": {
+      "deflection": 60763888.888888896,
+      "formula": "delta = P L^3 / (3 E I)"
+    },
+    "timestamp": "2026-03-22T13:10:29.466Z"
+  }
+]
