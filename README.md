@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mechanical Engineering Toolkit
 
 A production-style full-stack web application for mechanical engineering students to perform common analysis and design calculations.
@@ -144,3 +145,6 @@ https://dashboard.render.com/blueprint/new?repo=https://github.com/yourname/mech
 - `server/src/app.js` serves `client/dist` in production, so frontend + backend run from one Render web service.
 - Health endpoint: `/health`
 - JSON history storage is file-based and ephemeral on free cloud instances.
+=======
+# mechanical-engineering-toolkit
+>>>>>>> 3a6004be8a77e7a92bb82cfb02864694ad6de593
