@@ -3,5 +3,10 @@
     name: mechanical-engineering-toolkit
     env: node
     plan: free
-    buildCommand: npm install && npm run build --prefix client && npm install --prefix server
-    startCommand: npm start --prefix server
+    buildCommand: |
+      cd client
+      npm install
+      npm run build
+      cd ../server
+      npm install
+    startCommand: cd server && npm start
