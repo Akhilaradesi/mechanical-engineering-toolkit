@@ -1,11 +1,12 @@
 ﻿services:
   - type: web
     name: mechanical-engineering-toolkit
-    runtime: node
+    env: node
     plan: free
-    buildCommand: npm install --workspaces && npm --prefix client run build
-    startCommand: npm --prefix server run start
-    healthCheckPath: /health
-    envVars:
-      - key: NODE_ENV
-        value: production
+    buildCommand: |
+      cd client
+      npm install
+      npm run build
+      cd ../server
+      npm install
+    startCommand: cd server && npm start
